@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario  con HTML5 YCSS3</title>
+    <link rel="stylesheet" href="css/estilos_formulario.css">
+</head>
+<body>
+    <div class="contenedor">
+        <label for="titulo" class="titulo">Registro de Usuarios</label> 
+        <form action="alta_usuario.php"  class="formulario"  name="formulario" method="post" >
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="nombre" placeholder="Escribe tu nombre" class="form-control"  required>
+            <!-- <span class="error-message" id="nombreError">Nombre invalido, solo puede contener letras, iniciando con una letra mayúscula y debe de tener una longitud de 3 caracteres.</span> -->
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="Apellidos" id="apellidos" placeholder="Escribe tus apellidos" class="form-control"  required>
+            <!-- <span class="error-message" id="apellidosError">Apellidos invalidos. debe de iniciar con una letra mayúscula después letras minúsculas, seguido un espacio, después otra letra mayúscula y mas letras minúsculas.</span> -->
+
+            <label for="Genero">Seleccione su género:</label>
+            <div class="radio">
+                <input type="radio" name="Genero" id="H" value="M" required>
+                <label for="H" id="mas">Masculino</label>
+                <input type="radio" name="Genero" id="M" value="F">
+                <label for="M" id="fem">Femenino</label>
+            </div>
+            
+            <label for="#domicilio">Domicilio</label>
+            <input type="text" name="Direccion" id="domicilio" placeholder="Describe la dirección de tu domicilio" class="form-control" required>
+
+            <label for="#usuario">Usuario</label>
+            <input value="" type="text" name="Usuario" id="usuario" placeholder="Crea un usuario" class="form-control">
+    
+            <label for="#password">Contraseña</label>
+            <input value="" type="password" name="Password" id="password" placeholder="Genera una contraseña" class="form-control">
+    
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" class="form-control"  required>
+                <label for="checkbox">Acepto terminos y condiciones</label>
+                <!-- <span class="error-message" id="terminosError">Acepta los términos y condiciones.</span> -->
+            </div>
+
+            <div class="btn-group">
+                <input type="reset" value="Cancelar" class="cancelar">
+                <input type="submit" value="Registrar" class="guardar">
+                
+            </div>
+        </form>
+    </div>
+    <script src="js/instrucciones.js"></script>
+</body>
+</html>

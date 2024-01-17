@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url(Nunito_Sans/NunitoSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: "Nunito";
+    font-size: 1em;
+    background-color: rgb(162, 162, 163);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* ESTILOS DEL MENU */
+header{
+    position: fixed;
+    width: 5%;
+    height: 100%;
+    top: 0;
+    background-color: #fff;
+
+
+}
+
+.menu{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2001;
+    
+}
+
+
+.menu .btn-menu{
+    display: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+
+}
+/* .menu .btn-menu:hover{
+    background-color: #111; 
+
+} */
+.menu .enlaces{
+    display: inline-block;
+    text-align: right;
+    width: 50px;
+
+}
+.menu .enlaces a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5em 1em;
+    text-align: center;
+    font-size: 1.1em;
+    color: rgb(42, 42, 136);
+}
+
+.menu .enlaces i {
+    margin-right: 5px;
+    color: rgb(42, 42, 136);
+    font-size: 20px;
+
+
+    
+}
+
+.menu .enlaces .current {
+    border-bottom: 2px solid rgb(176, 6, 6);
+    
+}
+
+
+
+
+
+.barra_de_navegacion{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.barra_de_navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fbf9f9; 
+}
+
+.buscar {
+    padding: 8px;
+    border: 1px solid rgb(170, 169, 169);
+    border-radius: 5px;
+    margin-right: 250px;
+    background-color: #ccc;
+    width: 300px; 
+}
+
+.buscar::placeholder {
+    color: #525151; /* Color del texto de marcador de posición */
+}
+
+.buscar:focus {
+    outline: none; 
+    border-color: rgb(42, 42, 136); 
+}
+
+.umb{
+    padding-right: 200px;
+    color: rgb(42, 42, 136);
+}
+ 

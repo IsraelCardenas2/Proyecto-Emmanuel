@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos_formulario2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <label for="titulo" class="titulo">Control de Acceso</label> 
+        <form action="comprobar_acceso.php" onsubmit="return validarFormulario()"  class="formulario"  name="formulario" method="post" >
+            <label for="#user">Usuario</label>
+            <input value="" type="text" name="user" id="user" placeholder="Tu usuario" class="form-control">
+    
+            <label for="#pwd">Contraseña</label>
+            <input value="" type="password" name="pwd" id="pwd" placeholder="Tu contraseña" class="form-control">
+    
+       
+            <div class="btn-group">
+                <input type="submit" name="guardar" value="Iniciar Sesión" class="guardar">    
+            </div>
+            <br>
+            <p>¿No tienes una cuenta registrate? <a href="validacion2.html">Registrate ahora</a></p>
+
+        </form>
+    </div>
+</body>
+</html>

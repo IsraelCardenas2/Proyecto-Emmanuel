@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Medium;
+    src: url(../css/Nunito/static/Nunito-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #9fa09f;
+    font-family: "Medium";
+    font-size: 1em;
+}
+.contenedor{
+    background-color: #fff;
+    width: 33%;
+    margin: 3em auto;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 50%);
+    
+}
+.contenedor .titulo{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: block;
+    padding: 1em;
+    font-size: 1.1em;
+    color: #fff;
+    text-align: center;
+    
+}
+.contenedor .formulario{
+    background-color: #fff;
+    width: 100%;
+    padding: 1em;
+    
+}
+.contenedor .formulario label{
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+    font-size: 1em;
+    color: #111;
+
+}
+input[type=text], [type=password]{
+    font-size: 1em;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 0.5em;
+    padding: 1em 0.5em;
+    font-family: "Medium";
+    border-bottom: 1px solid #9fa09f ;
+
+} 
+
+.contenedor .formulario .radio, .contenedor .formulario .checkbox{
+    display: inline-flex;
+
+}
+
+input[type=radio], input[type=checkbox]{
+    display: none;
+}
+.contenedor .formulario .radio label, .contenedor .formulario .checkbox label{
+  
+    color: #111;
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    transition: all 0.3s ease;
+}
+.contenedor .formulario .radio label:hover, .contenedor .formulario .checkbox label:hover{
+    background-color: rgba(0, 116, 217, 0.2 );
+}
+
+
+.contenedor .formulario .radio label:before, .contenedor .formulario .checkbox label:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline;
+    background: none;
+    border: 3px solid #0865b6;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 3px;
+}
+
+
+.contenedor .formulario .checkbox label:before{
+    border-radius: 3px;
+
+}
+.contenedor .formulario input[type=radio]:checked + label, .contenedor .formulario input[type=checkbox]:checked + label{
+    padding: 5px 15px;
+    background-color: #0074d9;
+    border-radius: 1px ;
+    color: #fff;
+
+
+}
+.contenedor .formulario input[type=radio]:checked + label::before, .contenedor .formulario input[type=checkbox]:checked + label::before{
+    display: none;
+}
+
+.contenedor .formulario .btn-group{
+    display: flex;
+    width: 100%;
+    justify-content:  space-between;
+    margin-top:  1em;
+}
+.contenedor .formulario .btn-group .cancelar, .contenedor .formulario .btn-group .guardar{
+    border: none;
+    border-radius: 3px;
+    display: block;
+    font-family: "Medium";
+    font-size: 1em;
+    padding: 0.5em 1.2em;
+    cursor: pointer;
+}
+.contenedor .formulario .btn-group .cancelar{
+    background-color: #dfdede;
+    color: #111;
+    
+}
+.contenedor .formulario .btn-group .guardar
+{
+    background-color:  #0074d9;
+    color: #fff;
+    margin-left: 35%;
+    
+}
+a{
+    text-decoration: none;
+    margin: auto;
+    color: #0074d9;
+}
+p{
+    text-align: center;
+}
+
+
+
+/*seccion Validadcion*/
+
+.form-control:focus {
+    border-bottom: 2px solid #0075ff;
+    outline: none;
+}
+
+.formulario label {
+    display: block;
+}
+
+.valid {
+    border: 2px solid #4CAF50;
+}
+
+.invalid {
+    border: 2px solid #FF5733;
+}
+
+.formulario .error-message {
+    color: #FF5733;
+    margin-top: 5px;
+    display: none;
+}
+
+
+   
+.error{
+    color: red;
+}
